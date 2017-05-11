@@ -5,3 +5,8 @@ grammar_cjkRuby: true
 ---
 
 
+使用docker安装keras
+```
+$ docker run -it --rm $(ls /dev/nvidia* | xargs -I{} echo '--device={}') -v /srv/ai:/srv/ai gw000/keras:1.2.0-py3-th-gpu 
+
+```
